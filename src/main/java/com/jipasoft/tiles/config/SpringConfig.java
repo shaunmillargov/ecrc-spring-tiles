@@ -38,6 +38,7 @@ public class SpringConfig extends WebMvcConfigurerAdapter {
 		TilesConfigurer configurer = new TilesConfigurer();
 		configurer.setDefinitions("/WEB-INF/tiles.xml");
 
+		log.debug("tiles configurer initialized");
 		return configurer;
 	}
 
