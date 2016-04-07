@@ -1,5 +1,5 @@
 # Spring Tiles Example
-[![Build Status](https://travis-ci.org/jipaman/spring-tiles-example.svg?branch=master)](https://travis-ci.org/jipaman/spring-tiles-example)
+[![Build Status](https://travis-ci.org/juliuskrah/spring-tiles-example.svg?branch=master)](https://travis-ci.org/juliuskrah/spring-tiles-example)
 
 This example integrates Apache Tiles with the Spring Framework
 
