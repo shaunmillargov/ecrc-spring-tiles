@@ -9,9 +9,8 @@ import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.springframework.web.servlet.view.UrlBasedViewResolver;
 import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
-import org.springframework.web.servlet.view.tiles3.TilesView;
+import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
 @Configuration
 @EnableWebMvc
@@ -26,8 +25,7 @@ public class SpringConfig extends WebMvcConfigurerAdapter {
 
 	@Bean
 	public ViewResolver tilesViewResolver() {
-		UrlBasedViewResolver resolver = new UrlBasedViewResolver();
-		resolver.setViewClass(TilesView.class);
+		TilesViewResolver resolver = new TilesViewResolver();
 
 		log.debug("internal resource view resolver initialized");
 		return resolver;
