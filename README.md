@@ -1,14 +1,68 @@
-# Spring Tiles Example
-[![Build Status](https://travis-ci.org/juliuskrah/spring-tiles-example.svg?branch=master)](https://travis-ci.org/juliuskrah/spring-tiles-example)
+# ecrc-spring-tiles-template
 
-This example integrates Apache Tiles with the Spring Framework
+A basic Spring / Tiles Starter tempate project for eCRC and compatible with Wildfly 10.1.0. 
 
-## Pre requiites
-- Java 8+
-- Maven 3.3.3+
+Contains Wildfly-Maven plugin for deployment tasks. 
 
-## Running the application
-To run the application run `mvn jetty:run`. Visit the site on [http://localhost:8080/](http://localhost:8080/).
+## Getting Started
 
-# Guided tutorial
-Checkout my [blog](http://juliuskrah.com/blog/2017/01/21/spring-integrating-tiles/) for a guided tutorial on how to configure Spring for Tiles.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+Wildfly 10.1.0 installed and running during application development. 
+Possibly STS4 (Used to create this initial code base). 
+
+
+### Installing
+
+Install Wildfly 10.1.0 and set up admin user. (Run add-user.bat in the Wildfly bin folder). 
+
+```
+mvn clean install
+```
+
+## War file creation
+
+```
+mvn war:war
+```
+
+## Deploy to running Wildfly server
+
+```
+mvn wildfly:redeploy
+```
+
+## Application Entry point
+
+```
+http://localhost:8080/ecrc/
+```
+
+## Built With
+
+TBD
+
+## Contributing
+
+TBD
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+TBD
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
+* source: https://github.com/juliuskrah/spring-tiles-example

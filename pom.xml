@@ -1,48 +1,65 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.jipasoft.tiles</groupId>
-	<artifactId>spring-tiles-example</artifactId>
+	
+	<groupId>ca.bc.gov.open</groupId>
+	<artifactId>ecrc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>apache-tiles-example</name>
+	<name>ecrc</name>
+	<description>Criminal Record Check (eCRC)</description>
 
 	<properties>
-		<jetty.maven.plugin-version>9.3.2.v20150730</jetty.maven.plugin-version>
 		<jsp.jstl.version>1.2</jsp.jstl.version>
 		<jsp.api.version>2.0</jsp.api.version>
 		<junit.version>4.12</junit.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.war.version>3.2.3</maven.war.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<servlet.api.version>3.1.0</servlet.api.version>
 		<slf4j.version>1.7.22</slf4j.version>
 		<spring.framework.version>4.3.5.RELEASE</spring.framework.version>
 		<tiles.request-version>1.0.6</tiles.request-version>
 		<tiles-version>3.0.7</tiles-version>
+		<wildfly.plugin.version>2.1.0.Beta1</wildfly.plugin.version>
+		<wildfly-home>/Users/176899/wildfly-10.1.0</wildfly-home>
+		<wildfly-hostname>localhost</wildfly-hostname>
+		<wildfly-port>9990</wildfly-port>
+		<wildfly-username>admin</wildfly-username>
+		<wildfly-password>secret</wildfly-password>
 	</properties>
 
 	<build>
-		<finalName>apache-tiles-example</finalName>
+		<finalName>ecrc</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>2.6</version>
+				<version>${maven.war.version}</version>
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-				<version>${jetty.maven.plugin-version}</version>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>${wildfly.plugin.version}</version>
 				<configuration>
-					<scanIntervalSeconds>10</scanIntervalSeconds>
-					<webApp>
-						<contextPath>/</contextPath>
-					</webApp>
+					<hostname>${wildfly-hostname}</hostname>
+					<port>${wildfly-port}</port>
+					<username>${wildfly-username}</username>
+					<password>${wildfly-password}</password>
+					<filename>${project.artifactId}.war</filename>
 				</configuration>
+				<executions>
+					<execution>
+						<phase>install</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
@@ -98,13 +115,12 @@
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- sprinng test -->
+		<!-- spring test -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>${spring.framework.version}</version>
 		</dependency>
 	</dependencies>
-
-	<description>project to introduce the features of Apache Tiles 3</description>
+	
 </project>

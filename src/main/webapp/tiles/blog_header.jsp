@@ -1,3 +1,1 @@
-<h1 class="blog-title">The Bootstrap Blog</h1>
-<p class="lead blog-description">The official example template of
-	creating a blog with Bootstrap.</p>
+<h1 class="blog-title">The New Home of eCRC</h1>

@@ -8,27 +8,18 @@
 	</p>
 </div>
 <div class="sidebar-module">
-	<h4>Archives</h4>
+	<h4>Links</h4>
 	<ol class="list-unstyled">
-		<li><a href="#">March 2014</a></li>
-		<li><a href="#">February 2014</a></li>
-		<li><a href="#">January 2014</a></li>
-		<li><a href="#">December 2013</a></li>
-		<li><a href="#">November 2013</a></li>
-		<li><a href="#">October 2013</a></li>
-		<li><a href="#">September 2013</a></li>
-		<li><a href="#">August 2013</a></li>
-		<li><a href="#">July 2013</a></li>
-		<li><a href="#">June 2013</a></li>
-		<li><a href="#">May 2013</a></li>
-		<li><a href="#">April 2013</a></li>
+		<li><a href="#">Link 1</a></li>
+		<li><a href="#">Link 2</a></li>
+		<li><a href="#">Link n</a></li>
 	</ol>
 </div>
 <div class="sidebar-module">
-	<h4>Elsewhere</h4>
+	<h4>Other stuff</h4>
 	<ol class="list-unstyled">
-		<li><a href="#">GitHub</a></li>
-		<li><a href="#">Twitter</a></li>
-		<li><a href="#">Facebook</a></li>
+		<li><a href="#">MyLink_A</a></li>
+		<li><a href="#">MyLink_B</a></li>
+		<li><a href="#">MyLink_C</a></li>
 	</ol>
 </div>
