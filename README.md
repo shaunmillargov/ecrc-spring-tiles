@@ -13,6 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 Wildfly 10.1.0 installed and running during application development. 
 Possibly STS4 (Used to create this initial code base). 
 
+Note: Clone the repo then import as a 'Maven' project into STS4. 
 
 ### Installing
 
@@ -31,7 +32,7 @@ mvn war:war
 ## Deploy to running Wildfly server
 
 ```
-mvn wildfly:redeploy
+mvn wildfly:deploy
 ```
 
 ## Application Entry point
