@@ -6,8 +6,12 @@
             </pattern>
         </encoder>
     </appender>
+    
+    <logger name="ca.bc.gov.open.pssg.ecrc" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
 
-    <root level="INFO">
+    <root level="DEBUG">
         <appender-ref ref="STDOUT" />
     </root>
 </configuration>

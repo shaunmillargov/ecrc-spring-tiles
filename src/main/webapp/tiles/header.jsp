@@ -1,2 +1,2 @@
-<h1 class="blog-title">The eCRC Header</h1>
+<h1>eCRC Header</h1>
  

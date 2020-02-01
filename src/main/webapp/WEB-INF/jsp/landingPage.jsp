@@ -1,3 +1,3 @@
 <div>	
-	<h1>The BODY content</h1>
+	<h1>eCRC BODY</h1>
 </div>

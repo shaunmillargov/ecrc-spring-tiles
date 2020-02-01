@@ -1,4 +1,4 @@
-package com.jipasoft.tiles;
+package ca.bc.gov.open.pssg.ecrc;
 
 import org.springframework.context.annotation.Configuration;
 

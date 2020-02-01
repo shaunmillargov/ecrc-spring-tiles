@@ -13,7 +13,7 @@
     	<meta http-equiv="x-ua-compatible" content="IE=edge" >
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-		<title>My Title</title>
+		<title><tiles:insertAttribute name="page_heading" ignore="true" /></title>
         
         <!--  provides page context for js if required -->
         <script>var ctx = "${pageContext.request.contextPath}"</script> 
