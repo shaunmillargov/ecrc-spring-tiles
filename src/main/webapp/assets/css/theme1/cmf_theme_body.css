@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+#theme_body, #theme_body * {
+	line-height:18px;
+}
+
+#theme_body ul,
+#theme_body ol {
+/*	margin: 5px 0;	*/
+}
+
+#theme_body ul > li {
+	margin-left: 10px;
+	background: url("../../img/bullets_list.png") 0 7px no-repeat;
+    padding: 5px 0 5px 20px;
+}
+
+#theme_body ol > li {
+	margin-left: 30px;
+	list-style-type: decimal;
+    padding: 5px 0 5px 10px;
+}
+
+.themeBlock{
+	width: 45%;
+	padding: 20px 30px 20px 0;
+	float: left;
+}
+
+/* CS 2012-09-26 SeniorsBC specific style workaround */
+
+/* hide banner image on Theme page */
+.themeBlock .box-intro img#banner-seniorsbc {
+	display: none;
+}
+
+/* hide intro text on Subtheme page */
+#theme_body .introduction p#text-seniorsbc {
+	display: none;
+}
+

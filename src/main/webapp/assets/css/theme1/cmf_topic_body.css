@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+
+.topic_body,
+.topic_body * {
+	line-height:18px;
+}
+
+.topic_body ul,
+.topic_body ol {
+/*	margin: 5px 0;	*/
+}
+
+.topic_body ul > li {
+	margin-left: 10px;
+	background: url("../../img/bullets_list.png") 0 7px no-repeat;
+    padding: 5px 0 5px 20px;
+}
+
+.topic_body ol > li {
+	margin-left: 30px;
+	list-style-type: decimal;
+    padding: 5px 0 5px 10px;
+}
+
+/*===========================
+		CAROUSEL
+===========================*/
+
+#carousel_wrapper{
+	
+	font-family: verdana, arial, sans-serif;
+	position:relative;
+	border:1px #CACACA solid;
+	border-radius:5px;
+	overflow:hidden;
+	behavior: url(/assets/gov/css/PIE.htc);
+}
+
+#carousel_wrapper a{
+	text-decoration:none;
+}
+
+#carousel_wrapper{
+	width:457px;
+	height:203px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	
+}
+
+
+/*=======================
+	Navigation Area
+========================*/
+#navigation_area{
+	position:relative;
+	display:block;
+	width:147px;
+	height:203px;
+	float:right;
+	overflow:hidden;
+	z-index:20;
+	cursor:pointer;
+}
+
+.navigation_element{
+	border-left:1px #CACACA solid;
+	border-bottom:1px #CACACA solid;
+	width:147px;
+	height:50px;
+	/*background-color:#FFFFFF;*/
+	float:left;
+	position:relative;
+	display:block;
+}
+
+.navigation_element.active{
+	/*background-color:#EFEFEF;*/
+	color:#234075;
+}
+
+.nav_element_heading{
+	color:#234075;
+	font-size:13px;
+	padding:7px;
+}
+
+.nav_element_heading:hover{
+	color:#E6B345;
+	text-decoration:underline;
+}
+.navigation_element.active .nav_element_heading{
+	color:#E6B345;
+	font-weight:bold;
+}
+
+.navigation_element.active .nav_element_heading:hover{
+	text-decoration:none;
+}
+
+/*=======================
+	Slide Area
+========================*/
+
+.slide_area{
+	position:relative;
+	display:none;
+	width:279px;
+	height:175px;
+	padding:13px;
+	float:left;
+	z-index:0;
+	overflow:hidden;
+}
+
+.slide_area h4{
+	margin-top:-5px;	
+	color:#404040;
+	font-weight:bold;
+	font-size:15px;
+}
+
+.slide_area p{
+	font-size: 13px;
+	line-height:125%;
+}
+
+.slide_area .more{
+	padding-top:10px;	
+}
+
+/*===========================
+	END CAROUSEL
+===========================*/
+
+/*===========================
+	Main Content
+===========================*/
+
+#MainContent{
+	padding: 0 0 20px 0;
+}
+
+#image_box{
+	width:220px;
+	overflow:hidden;
+	border:1px #CACACA solid;
+	float:left;
+	margin:0 5px 5px 0;
+}
+
+#image_box span{
+	font-size:10px;
+	
+}
+
+/*Remove <A> attributes for Anchors*/
+a[class='dijitEditorPluginInsertAnchorStyle']{
+    color: #6D6D6D;
+}
+
+
+a[class='dijitEditorPluginInsertAnchorStyle']:hover {
+    text-decoration: none;
+    cursor: text;
+    color: #6D6D6D;
+}
+
+/*Remove Space for Anchor Type Tabs*/
+.zeroAnch{
+	display:none;
+}
+
+
+
+/*===========================
+	Feature Boxes
+============================*/
+
+.FeatureBoxes{
+	position:relative;
+	width:443px;
+	overflow:hidden;
+	border:1px #CACACA solid;
+	border-radius:5px;
+	overflow:hidden;
+	behavior: url(/assets/gov/css/PIE.htc);
+	margin: 0 auto;
+}
+
+.FeatureBoxes .featureBoxRow{
+	float:left;
+}
+
+.FeatureBoxes h3{
+	color:#234175;
+	font-weight:bold;
+	margin-top:0;
+	margin-bottom:5px;
+}
+
+.FeatureBoxes p{
+	color:#6d6d6d;
+}
+
+.FeatureBoxes ul{
+	margin-left:18px;
+}
+
+.FeatureBoxes li{
+	/*line-height:18px;*/
+	font-size:12px;
+	background:none !important;
+}
+
+.FeatureBoxes li{
+	/*line-height:118%;*/
+	list-style-type:disc;
+	margin-left:18px;
+	color:#D69C22;
+	margin:0 !important;
+	padding-left:2px !important;
+}
+
+.LeftBox, .RightBox{
+	width:201px;
+	min-height:115px;
+	padding:10px;
+	overflow:hidden;
+	border-top:1px #CACACA solid;
+	float:left;
+	margin-top:-1px;
+}
+
+.LeftBox{
+	border-right:1px #CACACA solid;
+	margin-right:-1px;
+}
+
+.RightBox{
+	border-left:1px #CACACA solid;
+}
+
+/* 2012-05-01 - temp fix for CMSLite editor allowing ul/ol as direct child elements of other ul/ol elements */
+
+.topic_body ul>ul,
+.topic_body ol>ul,
+.topic_body ul>ol,
+.topic_body ol>ol
+{
+    margin-left: 40px;
+}
+
+/* 2012-06-12 - table with images temp fix ISSST */
+table.MsoTableGrid td img { vertical-align: top }

@@ -1,0 +1,82 @@
+.right_column {
+	width:275px;
+	float:right;
+}
+
+.right_column p {
+	padding-top: 0px;
+}
+
+.right_column .box {
+	background-color: #E6E6E6;
+	border: 1px solid #D3D3D3;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-bottom: 13px;
+	font-family: verdana,arial,sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	
+	behavior: url(/assets/gov/css/PIE.htc);
+	
+    /* Has to be here to render PIE properly in IE */
+    /*behavior: url(/resources/gov/css/PIE.htc);*/
+}
+
+.right_column .box h3 {
+	font-family: Century Gothic,sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #282828;
+	border-bottom: 1px solid #D3D3D3;
+	padding: 10px;
+	margin: 0;
+}
+
+.right_column .box .box-content {
+	width: 255px;
+	padding: 10px;
+}
+
+
+
+/* styles for wysiwyg freeform content */
+.right_column .freeform ul, .right_column .freeform ol {
+	padding-left: 25px;
+	margin: 0 0 5px 0;
+}
+
+.right_column .freeform ul > li {
+	list-style-type: disc;
+}
+
+.right_column .freeform ol > li {
+	list-style-type: decimal;
+}
+
+
+
+
+/* Related Links Box specific styles */
+.related .box-content li {
+	padding: 3px 0;
+}
+
+/* Promo Box specific styles */
+.promo .box-content img {
+	max-width: 255px;
+	margin: auto;
+	display: block;
+}
+
+.promo .box-content .freeform img {
+	display: inline;
+}
+
+/* Useful Contacts Box specific styles */
+.contact-info {width: 255px;}
+.contact-info .row{float: left; margin-bottom: 8px;}
+.contact-info span {float: left;}
+.contact-info span.label {width: 90px; padding-right: 10px;}
+.contact-info span.value {width: 150px;}

@@ -1,0 +1,1 @@
+<h1 class="blog-title">The eCRC Footer</h1>

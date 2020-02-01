@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+.static_content,
+.static_content * {
+	line-height:18px;
+}
+
+.static_content ul,
+.static_content ol {
+	margin: 10px 0;	
+}
+
+.static_content ul > li {
+	margin-left: 10px;
+	background: url("../../img/bullets_list.png") 0 4px no-repeat;
+    padding: 2px 0 2px 20px;
+}
+
+.static_content ol > li {
+	margin-left: 30px;
+	list-style-type: decimal;
+    padding: 2px 0 2px 10px;
+}
+
+
+/* 2012-05-01 - temp fix for CMSLite editor allowing ul/ol as direct child elements of other ul/ol elements */
+
+.static_content ul>ul,
+.static_content ol>ul,
+.static_content ul>ol,
+.static_content ol>ol
+{
+    margin-left: 40px;
+}

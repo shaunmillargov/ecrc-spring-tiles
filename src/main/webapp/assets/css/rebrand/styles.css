@@ -1,0 +1,130 @@
+/** BC GOV Template CSS **/
+
+body {
+	margin: 0;
+}
+
+.rbTable {
+	padding:0;
+	margin:0; 
+	border-collapse: collapse;
+}
+
+.appTitleText {
+	color: white;
+    font-size: 1.50em;
+    font-family: verdana;
+}
+
+rbfooter { 
+	position: relative;
+	height: auto!important;
+	display: block;
+	font-family: verdana; 
+}
+
+rbfooter a { text-decoration:none; }
+
+rbfooter a:hover { text-decoration:underline; }
+
+rbfooter p {
+	margin:0px; 
+	font-size: 12px;
+	padding: 10px 0px; 
+}
+
+rbfooter #footerWrapper {
+	width: 100%;
+	bottom: 0;
+	background-color: transparent;
+	border-top: 2px solid transparent;
+	position: relative;
+}
+
+rbfooter #footerWrapper ul {
+	clear: both;
+	padding: 10px 0;
+}
+
+ul.rbinline {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+ul.rbinline li a:link {
+	text-decoration: none;
+}
+
+ul.rbinline li a:hover {
+	text-decoration: underline;
+}
+
+ul.rbinline li {
+	float:none;
+	border-bottom: solid 1px #4b5e73;
+	padding: 4px 0px;
+}
+
+ul.rbinline li a:link, nav ul.rbinline li a:visited {
+	display: block;
+	text-align:left;
+	
+}
+
+ul.rbinline li:last-child { border-bottom-width: 0px; }
+
+.footer,
+.footer-stick-to-bottom { 
+	width: 100%; 
+	margin-top: 30px;
+}
+.footer {
+  position:relative;
+}
+.footer-stick-to-bottom {
+  position: absolute;
+  bottom: 0; 
+  background-color: #003366; 
+}
+
+@media (min-width: 768px) {
+
+	ul.rbinline li+li {
+		border-left: 1px solid #4b5e73;
+	}
+	ul.rbinline li {
+		float: left;
+		padding: 2px 10px;
+		position: relative;
+		border-bottom-width: 0px;
+	}
+	ul.rbinline li a {
+		text-align: center;
+		color: white;
+	}
+}
+	
+header#bcGov,
+rbfooter #footerWrapper {
+	border-color: #fcba19;	
+}
+header#bcGov .seperator { 
+	background-color: #fcba19;
+}
+
+rbfooter #footerWrapper,
+header#bcGov {
+	background-color: #003366;	
+}
+
+rbfooter, 
+rbfooter a, 
+rbfooter span {
+	color: #fff;
+}
+
+
+
+

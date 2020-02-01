@@ -1,0 +1,70 @@
+/* ---- Print Styles ----------------------------------------- */
+
+@media print {
+@page { margin: 1cm }
+/* Hide these elements */
+#row-navtheme, #row-header, #row-topsubthemenav, #row-subheader, #area-contentleft, #row-botsubthemenav, #row-footer, div.rightGovtogetherBC {
+	display: none;
+}
+
+/* Reset pixel defined widths  */
+#ls-canvas { width: 100%; }
+#row-content { width: 100%; }
+#area-contentright { width: 35%; }
+#ls-gen12-ls-area-body { width: 100%; }
+.right_column  { width: 100%; }
+.right_column .box .box-content { width: 90%; }
+
+/* Set font size and color */
+body, h1, h2, h3, h4, h5, a,
+.right_column .box h3, .right_column .box { 
+	color: #000; 
+	font-family: "Times New Roman", Times, serif;
+}
+
+h1 {	20pt; }
+h2 {	16pt;	}
+h3, .right_column .box h3 {	14pt;	}
+p {	12pt; }
+
+.promo .box-content img {
+	padding-bottom: 20px;
+}
+
+/* Over-ride theme specific layouts */
+
+#theme_body ul > li, .topic_body ul > li {
+	list-style-type: disc;
+	margin-left: 25px;
+	padding-left: 0;
+}
+
+.themeBlock {
+	width: 95%;
+	padding: 0;
+}
+
+.vcrcButton {
+	display:none;
+}
+
+.vcrcButtonDisabled {
+	display:none;
+}
+
+.headerArea {
+	display:none;
+}
+
+rbfooter {
+	display:none;
+}
+
+/*
+.footerWrapper {
+	display:none; 
+} */
+
+.vcrcBox {
+	display:none;
+}

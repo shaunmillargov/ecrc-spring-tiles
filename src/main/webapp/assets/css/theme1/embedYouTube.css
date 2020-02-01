@@ -1,0 +1,25 @@
+/*	CS - 2012-10-10 - styles for use with the CMSLite Embed YouTube widget */
+
+.vcontainer {
+	line-height:1;
+}
+
+.vfloatleft {
+	float:left;
+	margin-right:15px; 
+}
+
+.vfloatright {
+	float:right;
+	margin-left:15px; 
+}
+
+.vfloatnone {
+	margin:10px auto; 
+}
+
+.vdesc {
+	border:1px solid #808080;
+	padding:10px;
+	font-style:italic;
+}
