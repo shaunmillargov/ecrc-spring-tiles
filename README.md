@@ -68,5 +68,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * etc
 
 ## Outstanding 
-- add logback XML, remove log4j
+
 
