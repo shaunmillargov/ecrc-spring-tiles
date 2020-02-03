@@ -12,6 +12,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
+/**
+ * 
+ * @author shaunmillargov
+ *
+ */
 @Configuration
 @EnableWebMvc
 @ComponentScan({ "ca.bc.gov.open.pssg.ecrc" })
