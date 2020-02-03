@@ -20,7 +20,7 @@
   <definition name="home" extends="base">
       <put-attribute name="page_heading" value="Criminal Record Check"/>
       <put-attribute name="right" value="/tiles/blank.jsp"/>
-      <put-attribute name="body" value="/WEB-INF/jsp/landingPage.jsp"/>      
+      <put-attribute name="body" value="/WEB-INF/jsp/homePageContent.jsp"/>      
   </definition>
   
 </tiles-definitions>
