@@ -23,11 +23,9 @@
 		<tiles.request-version>1.0.6</tiles.request-version>
 		<tiles-version>3.0.7</tiles-version>
 		<wildfly.plugin.version>2.1.0.Beta1</wildfly.plugin.version>
-		<wildfly-home>/Users/176899/wildfly-10.1.0</wildfly-home>
-		<wildfly-hostname>localhost</wildfly-hostname>
-		<wildfly-port>9990</wildfly-port>
-		<wildfly-username>admin</wildfly-username>
-		<wildfly-password>secret</wildfly-password>
+		<wildfly-home>${env.wildfly-home}</wildfly-home>
+		<wildfly-hostname>${env.wildfly-hostname}</wildfly-hostname>
+		<wildfly-port>${env.wildfly-management-port}</wildfly-port>
 	</properties>
 
 	<build>

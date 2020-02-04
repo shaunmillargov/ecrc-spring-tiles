@@ -13,7 +13,17 @@ These instructions will get you a copy of the project up and running on your loc
 Wildfly 10.1.0 installed and running during application development. 
 Possibly STS4 (Used to create this initial code base). 
 
-Note: Clone the repo then import as a 'Maven' project into STS4. 
+Note: Clone the repo then import as a 'Maven' project into STS4.
+
+### Environmental variables
+
+The following Windows environmental variables must be set to ensure the Wildfly plugin finds your server at deployment time: 
+
+| Variable                   | Example Value                |
+| -------------------------- |-----------------------------:|
+| wildfly-home               | /Users/176899/wildfly-10.1.0 |
+| wildfly-hostname           | localhost                    |
+| wildfly-management-port    | 9990                         |
 
 ### Installing
 
