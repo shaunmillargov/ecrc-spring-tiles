@@ -22,6 +22,7 @@
 		<spring.framework.version>4.3.5.RELEASE</spring.framework.version>
 		<tiles.request-version>1.0.6</tiles.request-version>
 		<tiles-version>3.0.7</tiles-version>
+		<!--  local development only -->
 		<wildfly.plugin.version>2.1.0.Beta1</wildfly.plugin.version>
 		<wildfly-home>${env.wildfly-home}</wildfly-home>
 		<wildfly-hostname>${env.wildfly-hostname}</wildfly-hostname>
